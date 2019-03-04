@@ -1,0 +1,36 @@
+body{
+    width: 1020px;
+    height:1689px;
+    margin: auto;
+}
+header{
+    height: 63px;
+    background-color: #323232;
+}
+ 
+nav{font-family: 'Lato-Bold', sans-serif; /*добавить шрифты*/
+    font-size: 7px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.navhex{
+position:relative;
+z-index: 0;
+left: 420px;
+bottom:182px; /*206-24*/
+}
+
+nav a{
+    position: relative;
+    color: white;
+    bottom: 23px;
+}
+.navtriangle{
+    position: relative;
+    width: 64px;
+    height:55px;
+    top: 10px;
+}
+
+ 

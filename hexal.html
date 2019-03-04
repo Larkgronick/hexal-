@@ -6,19 +6,21 @@
     <title>Hexal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="main">
     <script src="main.js"></script>
 </head>
 <body>
    <header>
-       <nav>
-            <a href=" ">PORTFOLIO</a>
-            <a href=" ">ABOUT</a>
-            <img src="/assets/triangle.png" alt="triangle">  <!--не отображается треугольник??-->
-            <a href=" ">BLOG</a>
-            <a href=" ">GET IN TOUCH</a>
-       </nav>
+        <nav> 
+            <a href=" ">PORTFOLIO</a> <!--Вставить ссылку-->
+            <a href=" ">ABOUT</a>   <!--Вставить ссылку-->
+            <img class="navtriangle" src="assets/triangle.png" alt="triangle"> <!--Вставить ссылку-->
+            <a href=" ">BLOG</a> <!--Вставить ссылку-->
+            <a href=" " >GET IN TOUCH</a> <!--Вставить ссылку-->
+        </nav>  
+        <img class="navhex"src="assets/pointy-thingy.png" alt="pointy-thingy"> 
    </header>
-   <main>
+    <main>
        <img src="assets/hex-1.png" alt="hex-1">
        <img src="assets/hex-2.png" alt="hex-2">
        <img src="assets/hex-3.png" alt="hex-3">
@@ -46,11 +48,11 @@
        <h1>Get In Touch</h1>
        <h2>In order to get in touch use the contact form below:</h2>
         <form>
-            <input type="text" name="Name" value="Name (Required)">
-            <input type="text" name="Email" value="Email (Required)">
-            <input type="text" name="Subject" value="Subject">
-            <textarea id="message" name="Message" value ="Write your message here..." rows="5" cols="30"></textarea> <!--Указать верные значения! Не отображается текст-->
-            <button>SEND</button>
+            <input type="text" name="Name" placeholder="Name (Required)" required>
+            <input type="text" name="Email" placeholder="Email (Required)" required>
+            <input type="text" name="Subject" placeholder="Subject">
+            <textarea id="message" name="Message" placeholder="Write your message here..." rows="5" cols="30"></textarea> <!--Указать верные значения! Не отображается текст-->
+            <button type="submit">SEND</button>
         </form> 
         <p>Quisque Hendrerit: purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
         <figure>

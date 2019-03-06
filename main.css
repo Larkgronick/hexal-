@@ -8,17 +8,17 @@ header{
     background-color: #323232;
 }
  
-nav{font-family: 'Lato-Bold', sans-serif; /*добавить шрифты*/
-    font-size: 7px;
+nav{font-family: 'Lato-Bold', 'Segoe UI', sans-serif;
+    font-size: 7.21379pt;
     position: relative;
     text-align: center;
     top: -33px; /*63(ширина header)-23(отступ снизу)-7(высота текста)*/
 }
 .navhex{
-position:relative;
-z-index: 0;
-left: 420px;
-bottom:182px; /*206-24*/
+    position:relative;
+    z-index: 0;
+    left: 420px;
+    bottom:182px; /*206-24*/
 }
 nav a{
     position: relative;
@@ -49,25 +49,34 @@ z-index: 1;
 }
 hr{
     display: inline-block;
-    width: 410px;
-    height: 1px;
     color:#ebeef0;
     background-color:#ebeef0;
     border: 0px;
+}
+.firstline{
+    width: 410px;
+    height: 1px;
     margin-left: 30px;
 }
 .secondline{
+    width: 410px;
+    height: 1px;
     margin-left: 130px; /*160-30*/
 }
+.hexlines{
+    width: 1px;
+    height: 104px;
+    margin-bottom: 55px; /*проверить на perfect pixel*/  
+}
 .hex{
-    margin-top:77px;
     display: inline-block;
-    width: 180px; /*высчитать ширину гексагона!*/
+    width: 179px; /*проверить на perfect pixelвысчитать ширину гексагона?*/
     height: 206px; 
     background: red;
     transform: rotate(120deg);
     overflow: hidden;
     visibility: hidden;
+    margin: 5px; /*выставить верный отступ*/
 }
 .hex-inside{
     width: 100%;
@@ -81,13 +90,12 @@ hr{
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     transform: rotate(-60deg);
     visibility: visible;
 }
 .hex-img1{
     background-image: url(assets/hex-1.png);
+
 } 
 .hex-img2{
     background-image: url(assets/hex-2.png);
@@ -125,3 +133,62 @@ hr{
 .hex-img13{
     background-image: url(assets/hex-13.png);
 } 
+
+.firstrow{
+    margin-left: 120px; /*подогнать значения PF*/
+    margin-top: 77px;   /*подогнать значения PF*/
+}
+.secondrow{
+    margin-left: 28px; /*подогнать значения PF*/
+    margin-top: -53px; /*подогнать значения PF*/
+    
+}
+.thirdrow{
+    margin-left: 120px; /*подогнать значения PF*/
+    margin-top: -53px; /*подогнать значения PF*/
+}
+.square {
+    display: inline-block;
+    width: 6px;
+	height: 6px;
+    background:#ddd2c5;
+    padding: 3px;
+    margin-top: 58px;
+}
+.square:hover{
+    background-color: #8b8784;
+}
+.firstsquare{
+    margin-left: 30px;
+}
+.bottomline{
+    width: 906px;
+    height: 1px;
+    margin-left: 30px;
+}
+.about{
+    height: 341px;
+    background-color: #2eb398;
+}
+.anderson{
+    font-family: 'Maven Pro', 'Segoe UI', sans-serif;
+    font-size: 30pt;
+    color: #d7fcf5;
+}
+
+.illustrator{
+    font-family: 'Maven Pro', 'Segoe UI', sans-serif;
+    font-size: 18pt;
+    color: #20816d;
+ 
+}
+.description{
+    font-family: 'Lato', 'Segoe UI', sans-serif;
+    font-size: 12pt;
+    color: #d7fcf5;
+}
+.andersonline{
+    width: 1px;
+    height: 316px;
+    margin-left: 99px;
+}

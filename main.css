@@ -162,33 +162,54 @@ hr{
     margin-left: 30px;
 }
 .bottomline{
-    width: 906px;
+    width: 960px;
     height: 1px;
     margin-left: 30px;
 }
 .about{
+    display: flex;
+    flex-wrap: wrap;
     height: 341px;
     background-color: #2eb398;
+
 }
+.aboutline{
+    width: 1px;
+    height: 316px;
+    color:#23a187;
+    background-color: #23a187;
+    margin-top: 13px;
+    margin-left: 99px;
+}
+.anderhex{
+    margin-left: 20px;
+    margin-top: 68px;
+    
+}
+.andersonimg{
+    background-image: url(assets/anderson.png);
+    background-position: center;
+  
+}
+
 .anderson{
     font-family: 'Maven Pro', 'Segoe UI', sans-serif;
     font-size: 30pt;
     color: #d7fcf5;
+    margin-top:68px;
+    margin-left:19px;
 }
-
 .illustrator{
     font-family: 'Maven Pro', 'Segoe UI', sans-serif;
     font-size: 18pt;
     color: #20816d;
- 
+    display: block;
+    
 }
 .description{
+    display:block;
     font-family: 'Lato', 'Segoe UI', sans-serif;
     font-size: 12pt;
     color: #d7fcf5;
-}
-.andersonline{
-    width: 1px;
-    height: 316px;
-    margin-left: 99px;
+    
 }

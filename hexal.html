@@ -10,14 +10,15 @@
 </head>
 <body>
    <header>
-        <img class="navtriangle" src="assets/triangle.png" alt="triangle"> <!--Вставить ссылку-->
-        <nav> 
-            <a href=" ">PORTFOLIO</a> <!--Вставить ссылку-->
+        <h1 class="hide">Smith Anderson - Hexal Illustrator</h1>
+        <img class="navtriangle" src="assets/triangle.png" alt="triangle">
+        <nav class="navigation"> 
+            <a href="#portfolio">PORTFOLIO</a>
             <span class="dot">·</span>
-            <a href=" ">ABOUT</a>   <!--Вставить ссылку-->
-            <a class="rightnav" href=" ">BLOG</a> <!--Вставить ссылку-->
+            <a href="#smith">ABOUT</a>   <!--Вставить ссылку-->
+            <a class="rightnav" href="#blog">BLOG</a> <!--Вставить ссылку-->
             <span class="dot">·</span>
-            <a href=" " >GET IN TOUCH</a> <!--Вставить ссылку-->
+            <a href="#intouch" >GET IN TOUCH</a> <!--Вставить ссылку-->
         </nav> 
         <img class="navhex"src="assets/pointy-thingy.png" alt="pointy-thingy"> 
    </header>
@@ -25,8 +26,8 @@
    <hr class="secondline">
     <main>
     <section>
-        <div class="firstrow">
-            <hr class="hexlines"> 
+        <div class="firstrow" id="portfolio">
+           <hr class="hexlines"> 
            <div class="hex">
                 <div class="hex-inside">
                     <div class="hex-img hex-img1">
@@ -122,52 +123,58 @@
     </section>
     <hr class="bottomline">
     <section class="about">
-        <hr class="aboutline">  
-       <div class="anderhex">
+        <hr class="aboutline">   
+        <div class="anderhex">
             <div class="hex">
-                 <div class="hex-inside">
-                     <div class="hex-img andersonimg">
-                     </div>
-                 </div>
+                <div class="hex-inside">
+                    <div class="hex-img andersonimg">
+                    </div>
+                </div>
             </div>
         </div>
-                <h1 class="anderson">Smith Anderson</h1>
-                <h2 class="illustrator">Illustrator & Character Designer</h2>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
-                <img src="assets/facebook.png" alt="facebook">
-                <img src="assets/twitter.png" alt="twitter">
-                <img src="assets/google.png" alt="google">
-                <img src="assets/pinterest.png" alt="pinterest">
-                <img src="assets/linkedin.png" alt="linkedin">
-                <img src="assets/dribbble.png" alt="dribbble">
-        
+        <article class="andabout">
+            <h1 class="anderson" id="smith">Smith Anderson</h1>
+            <h2 class="illustrator">Illustrator & Character Designer</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhon- cus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
+            <a href="https://www.facebook.com/mr.smith.t.anderson"><img class="social facebook" id="blog" src="assets/facebook.png" alt="facebook"></a> 
+            <a href="https://twitter.com/smithanderson"><img class="social" src="assets/twitter.png" alt="twitter"></a> 
+            <a href="https://plus.google.com/102488163238993073077"><img class="social" src="assets/google.png" alt="google"></a> 
+            <a href="https://www.pinterest.com/signmysigns/"><img class="social" src="assets/pinterest.png" alt="pinterest"></a> 
+            <a href="https://www.linkedin.com/in/smith-anderson-856681143"><img class="social" src="assets/linkedin.png" alt="linkedin"></a> 
+            <a href="https://dribbble.com/shots/2257357"><img class="social" src="assets/dribbble.png" alt="dribbble"></a> 
+        </article>
+        <hr class="aboutlineright">   
     </section>
     </main>
-   <footer>
-       <h1>Get In Touch</h1>
-       <h2>In order to get in touch use the contact form below:</h2>
-        
-       <form>
-            <input type="text" name="Name" placeholder="Name (Required)" required>
-            <input type="text" name="Email" placeholder="Email (Required)" required>
-            <input type="text" name="Subject" placeholder="Subject">
-            <textarea id="message" name="Message" placeholder="Write your message here..." rows="5" cols="30"></textarea> <!--Указать верные значения! Не отображается текст-->
-            <button type="submit">SEND</button>
-        </form> 
-        <p>Quisque Hendrerit: purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
-        <figure>
-            <img src="assets/location.png" alt="location">
-            <figcaption>Elm St. 14/05 Lost City</figcaption> 
-        </figure>
-        <figure>
-            <img src="assets/phone.png" alt="phone">
-            <figcaption>+ 3528 331 86 35 </figcaption> 
-        </figure>
-        <figure>
-            <img src="assets/mail.png" alt="mail">
-            <figcaption>info@hexalcorp.com</figcaption> 
-        </figure>
-        <p>© Copyright 2013 by PSDchat</p>
+   <footer class="feedback">
+        <hr class="bottomline feedbackline">
+        <div class="info">
+           <section class="inputdata">
+           <h2 id="intouch">Get In Touch</h2>
+           <h3>In order to get in touch use the contact form below:</h3>
+            <form>
+                <input type="text" name="Name" placeholder="Name (Required)" required>
+                <input type="text" name="Email" placeholder="Email (Required)" required>
+                <input type="text" name="Subject" placeholder="Subject">
+                <textarea id="message" name="Message" placeholder="Write your message here..."></textarea> <!--Указать верные значения! Не отображается текст-->
+                <button type="submit">SEND</button>
+            </form> 
+            </section>  
+            <section class="contactdata">
+                <p><span>Quisque Hendrerit:</span> purus dapi-bus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
+                <br>
+                <div class="contact">
+                <img class="connect" src="assets/location.png" alt="location">
+                <div class="lost">Elm St. 14/05 Lost City</div> 
+                <a href="callto:+35283318635"><img class="connect" src="assets/phone.png" alt="phone"></a> 
+                <div>+ 3528 331 86 35 </div>
+                <a href = "mailto:info@hexalcorp.com"><img class="connect" src="assets/mail.png" alt="mail"></a> 
+                <div>info@hexalcorp.com</div> 
+            </div>
+        </section>
+        </div>
+    <hr class="bottomline feedbackline endline"> 
     </footer>
+    <p class="copyright">© Copyright 2013 by PSDchat</p>
 </body>
 </html>
